@@ -19,12 +19,12 @@ Since we also want to maintain a reachability matrix(for O(1) isLinked()), we ne
 <strong>addLink():</strong> Adds the link between two vertices. 
     <br> TimeComplexity:
     <br>--------------------
-        <br>O(|V| + |E|) to add a link and O(|V^2|) to perfrom breadth first searches to populate the reachability matrix
+        <br>O(1) to add a link and O((|E| + |V|) ^ 2) to perfrom breadth first searches to populate the reachability matrix
 
 <strong>removeLink():</strong> Removes the link between two vertices.
   <br>TimeComplexity: 
   <br>---------------
-        <br>O(|V| + |E|) to remove a link and O(|V^2|) to perfrom breadth first searches to populate the reachability matrix
+        <br>O(1) to remove a link and O((|E| + |V|) ^ 2) to perfrom breadth first searches to populate the reachability matrix
 
 <strong>isLinked():</strong> Checks whether there is a path between the two nodes.
   <br>TimeComplexity: 
