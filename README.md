@@ -6,7 +6,7 @@ This implements graph methods.
 <br>GraphTester.java has the main file.
 <br>GraphWrapper.java implements command file parsing 
 <br>Graphs.java implements addLink(), removeLink(), and isLinked()
-<br>cmdFile.in is the input file which has the commmands to be executed.
+<br>cmdFile.in is the input file which has the commands to be executed.
 
 Design Details:
 ===============
