@@ -3,9 +3,10 @@ Description:
 
 This implements graph methods.
 
-GraphTester.java has the main file.
-GraphWrapper.java implements command file parsing 
-Graphs.java implements addLink(), removeLink(), and isLinked()
+<br>GraphTester.java has the main file.
+<br>GraphWrapper.java implements command file parsing 
+<br>Graphs.java implements addLink(), removeLink(), and isLinked()
+<br>cmdFile.in is the input file which has the commmands to be executed.
 
 Design Details:
 ===============
@@ -15,16 +16,24 @@ This will keep the memory required to represent the graph is O(|V| + |E|)
 
 Since we also want to maintain a reachability matrix, we need an extra O(|V^2|) space.
 
-addLink(): Adds the link between two vertices. 
-  TimeComplexity: O(|V| + |E|) to add a link and O(|V^2|) to perfrom breadth first searches to populate the reachability matrix
+<strong>addLink():</strong> Adds the link between two vertices. 
+    <br> TimeComplexity:
+    <br>--------------------
+        <br>O(|V| + |E|) to add a link and O(|V^2|) to perfrom breadth first searches to populate the reachability matrix
 
-removeLink(): Removes the link between two vertices.
-  TimeComplexity: O(|V| + |E|) to remove a link and O(|V^2|) to perfrom breadth first searches to populate the reachability matrix
+<strong>removeLink():</strong> Removes the link between two vertices.
+  <br>TimeComplexity: 
+  <br>---------------
+        <br>O(|V| + |E|) to remove a link and O(|V^2|) to perfrom breadth first searches to populate the reachability matrix
 
-isLinked(): Checks whether there is a path between the two nodes.
-  TimeComplexity: O(1) Since we are always keeping an up-to-date version of reachability matrix.
+<strong>isLinked():</strong> Checks whether there is a path between the two nodes.
+  <br>TimeComplexity: 
+  <br>---------------
+        <br>O(1) Since we are always keeping an up-to-date version of reachability matrix.
   
-  
+
+Real World Application Design Constraints:
+==========================================
 In a real world application with many nodes, we can store the adjacency list map as a distributed hash across multiple machines.
 To be more specific we can use a graph database like Titan. And use Gremlin to query the database.
 All we need is query if there is path between two nodes using a query like 
