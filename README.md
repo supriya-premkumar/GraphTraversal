@@ -12,9 +12,9 @@ Design Details:
 ===============
 
 The graph is implemented with adjacency list. Since the graph is known to be sparse. 
-This will keep the memory required to represent the graph is O(|V| + |E|)
+This will ensure that the space required to represent the graph is O(|V| + |E|)
 
-Since we also want to maintain a reachability matrix, we need an extra O(|V^2|) space.
+Since we also want to maintain a reachability matrix(for O(1) isLinked()), we need an extra O(|V^2|) space.
 
 <strong>addLink():</strong> Adds the link between two vertices. 
     <br> TimeComplexity:
