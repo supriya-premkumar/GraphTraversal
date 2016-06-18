@@ -39,3 +39,5 @@ To be more specific we can use a graph database like Titan. And use Gremlin to q
 All we need is query if there is path between two nodes using a query like 
 g.V.has(vertex).out(vertex) to build a path.
 Since this will be a sparse graph the number of traversals required to determine a path between nodes will be lesser.
+
+Also in a real world application we should make addLink(), removeLink() and isLinked() thread safe.
