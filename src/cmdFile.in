@@ -1,0 +1,15 @@
+remove 1 2
+note: this shouldn’t crash even though this line doesn’t follow the format 
+add 1 2
+add 2 3
+add 1 3
+add 3 4
+add 5 6
+is linked 1 1
+is linked 1 4
+is linked 5 6
+is linked 1 6
+remove 1 3
+is linked 4 1
+remove 5 6
+is linked 5 6
